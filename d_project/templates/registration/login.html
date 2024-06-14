@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid vh-100 d-flex justify-content-center text-center mb-5">
+    <div class="row">
+        <div class="col-sm">
+            <div class="xl-4 border border-1 rounded py-5 px-3 m-5 bg-light">
+                <h3 class="mb-3" >Dating App</h3>
+                <p class="fw-bolder fs-5">Login</p>
+                
+                <input type="email" placeholder="email@domain.in" class="rounded w-100 border border-1 mb-2 py-2"><br>
+                <input type="password" class="rounded w-100 border border-1 mb-2 py-2" placeholder="password">
+                <button class="bg-dark w-100 py-2 text-light rounded">Login</button>
+                <p>or continue with </p>
+                <p class="bg-secondary bg-gradient  text-white bg-opacity-25 rounded justify-content-center"><img src="{% static "images/g1.png" %}" alt="" height="50px"><span class="fw-bold fs-4">Google</span></p></p>
+                <p><a href="{% url "signup" %}">don't have an account?</a></p>
+                <p><small class="text-secondary">By clicking continue you agree to our</small> <br><span>terms of services and privecy policy</span></p>
+         </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+{% endblock content %}
